@@ -1,0 +1,192 @@
+.newsletter{
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.footer{
+    margin-top: 50px;
+}
+
+.header{
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.header-tablet{
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.header-mobile{
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.header2-mobile{
+    padding: 20px;
+}
+
+.navbar-divider{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.header2{
+    padding: 20px;
+}
+
+.header2-tablet{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.a-navbar{
+    background-color: #f0f0f0;
+    padding: 0px;
+}
+
+.a-navbar-tablet{
+    background-color: #f0f0f0;
+    padding: 0px;
+}
+
+.a-navbar-mobile{
+    background-color: #f0f0f0;
+    padding: 0px;
+}
+
+.a-navbar-mobile-menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    display: none;
+}
+
+.a-navbar-mobile-menu-item{
+    padding: 20px;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.site-name{
+    color: blue;
+    font-weight: bolder;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.cart-icon{
+    font-size: 40px;
+}
+
+.search-form{
+    padding: 10px;
+}
+
+.categories-button{
+    border-radius: 0px;
+    padding: 20px;
+    height: 100%;
+}
+
+.menu-area{
+    padding: 20px;
+}
+
+.mycard{
+    padding: 30px;
+    border-radius: 0px;
+}
+
+.card-container{
+    padding: 10px;
+}
+
+.product_instance_category{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.r-form{
+    border-radius: 0px;
+    height: 50px;
+}
+
+.product_instance{
+    padding-bottom: 20px;
+}
+
+.product_image{
+    padding: 15px;
+    height: 250px;
+}
+
+.business_logo{
+    width: 75px;
+    height: 75px;
+}
+
+@media only screen and (max-width: 767px){
+    .a-navbar{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .header2{
+        display: none;
+    }
+    .a-navbar-mobile{
+        display: block;
+    }
+    .header-mobile{
+        display: block;
+    }
+    .header2-mobile{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .a-navbar{
+        display: block;
+    }
+    .header{
+        display: block;
+    }
+    .header2{
+        display: block;
+    }
+    .a-navbar-mobile{
+        display: none;
+    }
+    .header-mobile{
+        display: none;
+    }
+    .header2-mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .md-disp-none{
+        display: none;
+    }
+}

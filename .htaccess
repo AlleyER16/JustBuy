@@ -1,0 +1,23 @@
+ErrorDocument 404 http://localhost/justbuy/404
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^authenticate/([a-z]+) authenticate.php?type=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^products/([a-z0-9]+)/([a-z0-9]+)/([a-z0-9]+)/([a-z0-9]+) products.php?category=$1&brand=$2&price=$3&search_keyword=$4 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^brand/([0-9]+) brand.php?brand_id=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^product/([0-9]+) product.php?product_id=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]

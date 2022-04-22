@@ -1,0 +1,11 @@
+ErrorDocument 404 http://localhost/justbuy/admin/404.php
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^user_info/([0-9]+) user_info.php?type=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
